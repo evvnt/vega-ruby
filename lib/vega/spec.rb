@@ -18,6 +18,7 @@ module Vega
               createChart();
             } else {
               window.addEventListener("vega:load", createChart, true);
+              window.addEventListener("resize", createChart, true);
             }
           })();
         </script>
